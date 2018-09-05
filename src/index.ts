@@ -1,2 +1,6 @@
-import { User } from './models';
+import { db } from './db';
+
+db.getQueryInterface().dropAllTables().then(() => {
+    require('./examples/oneToOne');
+});
 
