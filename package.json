@@ -15,7 +15,9 @@
     "js-yaml": "^3.12.0",
     "mysql2": "^1.6.1",
     "nodemon": "^1.18.4",
-    "sequelize": "^4.38.0"
+    "reflect-metadata": "^0.1.12",
+    "sequelize": "^4.38.0",
+    "sequelize-typescript": "^0.6.6"
   },
   "devDependencies": {
     "@types/sequelize": "^4.27.25",

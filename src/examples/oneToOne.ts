@@ -1,18 +1,18 @@
 import { db, Sequelize } from '../db';
 
-const Player = db.define('player', {
+export const Player = db.define('player', {
     name: {
         type: Sequelize.STRING,
     },
 });
 
-const Team = db.define('team', {
+export const Team = db.define('team', {
     name: {
         type: Sequelize.STRING,
     },
 });
 
-const Coach = db.define('coach', {
+export const Coach = db.define('coach', {
     name: {
         type: Sequelize.STRING,
     },

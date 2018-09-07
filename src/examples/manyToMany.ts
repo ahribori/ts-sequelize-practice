@@ -1,6 +1,6 @@
 import { db, Sequelize } from '../db';
 
-const ItemTag = db.define('item_tag', {
+export const ItemTag = db.define('item_tag', {
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true,
@@ -21,12 +21,12 @@ const ItemTag = db.define('item_tag', {
     },
 });
 
-const Post = db.define('post', {
+export const Post = db.define('post', {
     title: Sequelize.STRING,
     content: Sequelize.TEXT,
 });
 
-const Tag = db.define('tag', {
+export const Tag = db.define('tag', {
     name: Sequelize.STRING,
 });
 

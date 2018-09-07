@@ -1,3 +1,4 @@
-import { User } from './users';
+import { Person } from './Person';
+import { Hobby } from './Hobby';
 
-export { User };
+export { Person, Hobby };
