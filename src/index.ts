@@ -9,12 +9,15 @@ sequelize.addModels([Person, Hobby]);
 
 Person.find({
     where: {
-        name: 'Daniel',
+        name: 'Daniel2',
     },
     include: [Hobby],
 }).then(results => {
-    results.hobbies.forEach(hobby => {
-        console.log(hobby.dataValues);
+    console.log(results.dataValues);
+    results.update({
+        name: 'Daniel3',
+    }).then((result) => {
+        console.log(result.dataValues);
     });
 });
 
